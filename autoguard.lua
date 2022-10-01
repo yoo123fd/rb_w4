@@ -22,6 +22,10 @@ local AutoGuard = {}; do
         end
     end
 
+    function AutoGuard:CheckOpponent(player)
+        return game.PlaceId == 10107441386 or (not (player.TeamColor == Client.TeamColor))
+    end 
+
     function AutoGuard:GetNearestPlayer() 
         local ClosestDistance = math.huge 
         local ClosestPlayer = nil 
@@ -43,7 +47,8 @@ local AutoGuard = {}; do
     function AutoGuard:IsGuarding()
         return game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.G)
     end
-    
+
+
     function AutoGuard:GetClosestNet()
         local ClosestDistance = math.huge 
         local ClosestNet = nil 
