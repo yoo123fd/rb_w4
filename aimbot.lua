@@ -1,3 +1,4 @@
+--[[
 getgenv().pings = {
     {Ping = 40, Timing = .5};
     {Ping = 60, Timing = .45};
@@ -9,6 +10,20 @@ getgenv().pings = {
     {Ping = 180, Timing = .17};
     {Ping = 200, Timing = .15};
     {Ping = 220, Timing = .1};
+}
+]] -- jokes new update made these early like a bitch ??
+
+getgenv().pings = {
+    {Ping = 40, Timing = .6};
+    {Ping = 60, Timing = .55};
+    {Ping = 80, Timing = .55};
+    {Ping = 100, Timing = .45};
+    {Ping = 120, Timing = .4};
+    {Ping = 140, Timing = .35};
+    {Ping = 160, Timing = .3};
+    {Ping = 180, Timing = .27};
+    {Ping = 200, Timing = .25};
+    {Ping = 220, Timing = .2};
 }
 
 
