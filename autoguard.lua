@@ -31,7 +31,7 @@ local AutoGuard = {}; do
         local ClosestPlayer = nil 
 
         for i,v in pairs(Players:GetPlayers()) do
-            if not (Client.TeamColor == v.TeamColor) and self:CheckBallCarrier(v) and v.Character:FindFirstChild("HumanoidRootPart") and HumanoidRootPart then
+            if self:CheckOpponent(v) and self:CheckBallCarrier(v) and v.Character:FindFirstChild("HumanoidRootPart") and HumanoidRootPart then
                 local Distance = (v.Character:FindFirstChild("HumanoidRootPart").Position - HumanoidRootPart.Position).Magnitude 
                 
                 if Distance < ClosestDistance then
