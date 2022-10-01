@@ -86,7 +86,7 @@ local AutoGuard = {}; do
             local Position = nil 
 
             if TargetHumanoid.MoveDirection.Magnitude > 0 then
-                Position = (TargetHumanoidRootPart.Position + (Direction * 5)) + TargetHumanoidRootPart.Velocity.Unit * 7
+                Position = (TargetHumanoidRootPart.Position + (Direction * 7)) + TargetHumanoidRootPart.Velocity.Unit * 7
             else
                 Position = TargetHumanoidRootPart.Position
             end
